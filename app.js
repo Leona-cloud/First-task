@@ -20,6 +20,7 @@ const getWeather = async (city) => {
     );
     return response.data;
   } catch (error) {
+    
     console.log("Something went wrong", error);
   }
 };
