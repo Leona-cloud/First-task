@@ -16,7 +16,7 @@ const getWeather = async (city) => {
   console.log(API_KEY);
   try {
     const response = await axios(
-      `https://api.weatherapi.com/v1/current.json?key=83f1e01c663e4a3f8df212647243006&q=${city}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`
     );
     return response.data;
   } catch (error) {
